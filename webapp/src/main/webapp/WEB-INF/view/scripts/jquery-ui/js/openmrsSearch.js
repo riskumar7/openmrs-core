@@ -613,9 +613,9 @@ function OpenmrsSearch(div, showIncludeVoided, searchHandler, selectionHandler, 
                 var fnRenderer = null;
                 var visible = true;
 
-                if(self.options.columnWidths && self.options.columnWidths[columnIndex])
+                if(self.options.columnWidths?.[columnIndex])
                     width = self.options.columnWidths[columnIndex];
-                if(self.options.columnRenderers && self.options.columnRenderers[columnIndex])
+                if(self.options.columnRenderers?.[columnIndex])
                     fnRenderer = self.options.columnRenderers[columnIndex];
                 if(self.options.columnVisibility && self.options.columnVisibility[columnIndex] == false )
                     visible = false;
